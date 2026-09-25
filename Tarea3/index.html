@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas semánticas y de formateo de texto 2</title>
+    <meta name="author" content="Peñaloza Luviano Tomas Ezequiel">
+</head>
+<body>
+    <h2>Como citar con semántica en HTML</h2>
+    <!-- citas cortas -->
+    <p>Como dijo un sabio: "Yo solo sé que no sé nada" -Un sabio</p>
+    <p>Como dijo un sabio: <q>Yo solo sé que no sé nada</q> -Un sabio</p>
+    <!-- citas largas -->
+    <p>Como dijo un sabio:</p>
+    <blockquote>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis nisi mauris, sit amet egestas massa hendrerit et. Nulla diam turpis, mattis at arcu vel, vehicula ornare arcu. Praesent facilisis, neque a ultricies iaculis, sapien nisl tristique ex, vel condimentum neque nunc sit amet augue. Donec non hendrerit arcu."
+    </blockquote>
+    <p>-Un sabio</p>
+    <hr>
+
+    <h2>Salto de línea y reglas horizontales</h2>
+    <p>Este es el primer párrafo <br><br> Este es el segundo párrafo <br>Este es el tercer párrafo</p>
+    <hr>
+
+    <h2>Visualización y formato de código</h2>
+    <p>Cuando nosotros implementamos <code>print("Hola Mundo")</code> en python la salida en consola será: <code>Hola Mundo</code></p>
+    <h3>Visualización de código en varias líneas</h3>
+    <p>Este programa suma dos súmeros en python</p>
+    <pre>
+        #suma de 2 números
+        a = 5
+        b = 6
+        print(a+b)
+    </pre>
+    <p>Este código imprime un homa mundo en HTML</p>
+    <!-- Para escribir caracteres especiales como "<>" se 
+     utilizan las entidades HTML que permiten avisar al 
+     navegador que vamos a utilizar un símbolo específico -->
+    <pre>
+        &lt;body&gt;
+            &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+        &lt;/body&gt;
+    </pre>
+    <hr>
+    <p>Para representar la entrada de teclado (teclas)
+        Se utiliza la etiqueta <code>&lt;kbd&gt;&lt;/kbd&gt;</code>
+        <p>Para compiar el texto de un archivo, utilizamos la combinación de teclas <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+    </p>
+</body>
+</html>
