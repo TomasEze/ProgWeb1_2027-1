@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes y contenido multimedia, Tablas HTML</title>
+    <meta name="author" content="Peñaloza Luviano Tomas Ezequiel">
+</head>
+<body>
+    <h1>Imágenes y contenido multimedia en HTML</h1>
+    <div>
+        <h2>Imágenes externas</h2>
+        <p>Esta imagen está en la web</p>
+        <img src="https://media1.tenor.com/m/yq1Oi-msMBYAAAAC/damnbird.gif" alt="Pukeko bird meme">
+    </div>
+    <div>
+        <h2>Imágenes Internas</h2>
+        <p>Esta imagen está en el servidor</p>
+        <img src="imagenes/Gato audífonos.jpg" alt="gato con audífonos">
+    </div>
+    <div>
+        <h2>Etiqueta de video</h2>
+        <video src="media/gatogritando.mp4" controls loop></video>
+    </div>
+    <div>
+        <h2>Etiqueta de audio</h2>
+        <audio src="media/Mascarita Común (1) - 2026-07-07.wav" controls></audio>
+    </div> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div>
+        <h2>Tablas HTML</h2>
+        <p>Es un elemento que nos permite distribuir información en un formato específico</p>
+        <table border="1px">
+            <caption>Países</caption>
+            <tr>
+                <th>País</th>
+                <th>Capital</th>
+                <th>Idioma</th>
+                <th>Continente</th>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td>CDMX</td>
+                <td>Español</td>
+                <td>América</td>
+            </tr>
+            <tr>
+                <td>España</td>
+                <td>Madrid</td>
+                <td>Español</td>
+                <td>Europa</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>Pekín</td>
+                <td>Mandarín</td>
+                <td>Asia</td>
+            </tr>
+            <tr>
+                <td>Egipto</td>
+                <td>El cairo</td>
+                <td>Árabe</td>
+                <td>Africa</td>
+            </tr>
+        </table>
+        <table border="1px">
+            <caption>Evaluaciones</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">1<sup>a</sup> Evaluación</th>
+                <th colspan="2">2<sup>a</sup> Evaluación</th>
+                <th colspan="2">3<sup>a</sup> Evaluación</th>
+            </tr>
+            <tr>
+                <td bgcolor="green">Aprobados</td>
+                <td bgcolor="red">Suspendidos</td>
+                <td bgcolor="green">Aprobados</td>
+                <td bgcolor="red">Suspendidos</td>
+                <td bgcolor="green">Aprobados</td>
+                <td bgcolor="red">Suspendidos</td>
+            </tr>
+            <tr>
+                <td>Informática</td>
+                <td>20</td>
+                <td>2</td>
+                <td>19</td>
+                <td>3</td>
+                <td>22</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>10</td>
+                <td>12</td>
+                <td>15</td>
+                <td>7</td>
+                <td>12</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <table border="1px">
+            <caption>Horario</caption>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>8:00-9:00</td>
+                <td bgcolor="red" rowspan="2">Matemáticas</td>
+                <td bgcolor="brown">Lengua</td>
+                <td>Música</td>
+                <td></td>
+                <td bgcolor="red" rowspan="2">Matemáticas</td>
+            </tr>
+            <tr>
+                <td>9:00-10:00</td>
+                <td>Inglés</td>
+                <td>Inglés</td>
+                <td bgcolor="pink">E. Física</td>
+            </tr>
+            <tr>
+                <td>10:00-10:30</td>
+                <td bgcolor="green" colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>10:30-11:30</td>
+                <td bgcolor="pink">E. Física</td>
+                <td>Valenciano</td>
+                <td bgcolor="brown" rowspan="2">Lengua</td>
+                <td bgcolor="yellow">Informática</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:30-13:30</td>
+                <td>Música</td>
+                <td bgcolor="pink">E. Física</td>
+                <td bgcolor="red" rowspan="2">Matemáticas</td>
+                <td bgcolor="yellow">Informática</td>
+            </tr>
+            <tr>
+                <td>13:30-14:30</td>
+                <td></td>
+                <td bgcolor="yellow">Informática</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

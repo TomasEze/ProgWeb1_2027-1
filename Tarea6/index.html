@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Formularios HTML</title>
+    <meta name="author" content="Peñaloza Luviano Tomas Ezequiel">
+</head>
+<body>
+    <h1>Listas y Formularios</h1>
+    <div>
+        <h2>Listas</h2>
+        <h3>Listas no ordenadas</h3>
+        <ul>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pan</li>
+            <li>Jamón</li>
+            <li>Papel</li>
+        </ul>
+
+        <h3>Listas Ordenadas</h3>
+        <!--type cambia el tipo de numeración, start indica desde donde inicia y reversed invierte el orden de los elementos de la lista-->
+        <ol type="1" start="10" reversed>
+            <li>Décimo</li>
+            <li>Noveno</li>
+            <li>Octavo</li>
+            <li>Séptimo</li>
+            <li>Sexto</li>
+        </ol>
+        <h3>Listas de definiciones</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado de hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hoja de Estilos de Cascada (Cascading Style Sheets)</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
+        <h3>Listas anidadas</h3>
+        <p>Desarrollo Web</p>
+        <ul>
+            <li>Front-End
+                <ol type="I">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </li>
+            <li>Back-End
+                <ol type="A">
+                    <li>NodeJS</li>
+                    <li>MariaDB</li>
+                    <li>ArchLinux</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>Formularios</h2>
+        <h3>Formulario de inicio de sesión</h3>
+        <!--method: método post es seguro porque viaja cifrado y get viaja en la url
+            action: determina en que archivo se van a validar los datos-->
+        <form action="/inicio_sesion" method="post">
+            <!--for de 'label' debe ser igual al id de 'input' y normalmente por conveniencia se nombra igual name de 'input' como los dos atributos anteriores-->
+            <label for="username">Nombre de Usuario:</label>
+            <!--name se utliza para el procesamiento de los datos en el back-->
+            <input type="text" id="username" name="username" required placeholder="ej: tunombredeusuario">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required placeholder="ej: 123456789"> 
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <h3>Formulario con campo de entrada de varias líneas</h3>
+        <form action="Validar.js" method="post">
+            <label for="name">Nombre de Usuario:</label>
+            <input type="text" id="name" name="name" required placeholder="ej: María José/José María"><br>
+            <label for="opinion">Comentario:</label>
+            <textarea name="opinion" id="opinion" required placeholder="Tu opinión es muy importante" rows="4" cols="60"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form action="/opciones" method="post">
+            <label for="bebidas">Bebidas:</label>
+            <select name="bebidas" id="bebidas">
+                <option value="coca_cola">Coca-Cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="boing">boing</option>
+                <option value="te">Té</option>
+                <option value="jarritos" selected>Jarritos</option>
+            </select>
+            <br>
+            <label for="postres">Postres</label>
+            <select name="postres" id="postres">
+                <option value="" disabled selected>Selecciona un postre</option>
+                <option value="pay_limon">Pay de limón</option>
+                <option value="pay_fresa">Pay de fresa</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+                <option value="pastel">Pastel</option>
+            </select>
+            <br>
+            <input type="submit">
+        </form>
+        <h3>Formulario con distintos campos de datos</h3>
+        <form action="datos.php" method="post">
+            <fieldset>
+                <legend>Nombre Completo</legend>
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="ap_paterno">Ap. Paterno:</label>
+                <input type="text" id="ap_paterno" name="ap_paterno" required>
+                <br>
+                <label for="ap_materno">Ap. Materno:</label>
+                <input type="text" id="ap_materno" name="ap_materno" required>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required min="18" max="90">
+                <br>
+                <label for="num_cuenta">Número de Cuenta</label>
+                <input type="text" id="num_cuenta" name="num_cuenta" placeholder="ej: 123456789" required pattern="[0-9]{9}">
+                <br>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <!--Calle Número y Colonia-->
+            <fieldset>
+                <legend>Datos Pesonales</legend>
+                <label for="calle">Calle</label>
+                <input type="text" id="calle" name="calle" required>
+                <br>
+                <label for="numero">Número</label>
+                <input type="number" id="numero" name="numero" required>
+                <br>
+                <label for="colonia">Colonia</label>
+                <input type="text" id="colonia" name="colonia" required>
+                <br>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
