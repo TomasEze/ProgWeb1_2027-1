@@ -1,0 +1,78 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /*10px*/
+}
+
+/*Orden para los estados de un enlace (LVFHA)*/
+
+a:link{
+    color: green;
+    text-decoration: underline
+}
+a:visited{
+    color: blueviolet;
+    text-decoration: line-through;
+}
+a:focus{
+    background-color: rgb(200, 75, 75);
+    color: black;
+    border: 2px dashed yellowgreen;
+}
+a:hover{
+    font-size: 15px;
+    color: black;
+    background-color: rgb(233, 233, 151);
+    border: 2px solid darkred;
+}
+a:active{
+    font-size: 20px;
+    color: rgb(109, 54, 116); 
+    background-color: rgb(8, 203, 138);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#encabezado{
+    background-color: black;
+    color: white;
+    font-size: 2em; /*20px*/
+}
+#encabezado h1{
+    text-shadow: 3px 2px 2px grey;
+    text-align: center;
+}
+#encabezado p{
+    font-size: 2em;
+}
+
+.contenedor-enlaces{
+    background-color: black;
+    color: white;
+    border: 2px dotted goldenrod;
+    font-size: 2em;
+}
+.enlaces h2{
+    font-size: 3rem;
+    text-shadow: 3px 2px 2px rgb(109, 118, 195);
+    text-align: center;
+}
+.enlaces p{
+    text-align: justify;
+    padding: 10px;
+}
+.enlaces ul{
+    padding-left: 0;
+    border: 3px solid darkcyan;
+}
+.enlaces ul li{
+    margin: 0.8rem;
+    border: 0.2rem solid rebeccapurple;
+    /*(disc, decimal,circle, square, lower-roman, lower-alpha, upper-alpha, none)*/
+    list-style-type: georgian;
+    list-style-position: inside;
+}
